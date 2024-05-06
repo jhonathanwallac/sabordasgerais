@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="scroll-behavior: smooth; scroll-padding-top: 100px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
-<body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+<body style="font-family: 'Jost', sans-serif;">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-fixed z-3 w-100">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" id="fonte-playfair-display">Sabor das Gerais</a>
+          <a class="navbar-brand" href="#" style="font-family: Playfair Display, serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;">Sabor das Gerais</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#">Nossa História</a>
-              <a class="nav-link" href="#">Avaliações</a>
-              <a class="nav-link" href="#">Sugestões</a>
-              <a class="nav-link" href="#">Reservas</a>
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="#sabordasgerais-historia" onclick="closeMenu()">Nossa História</a>
+              <a class="nav-link" href="#sabordasgerais-avaliacoes" onclick="closeMenu()">Avaliações</a>
+              <a class="nav-link" href="#sabordasgerais-sugestoes" onclick="closeMenu()">Sugestões</a>
+              <a class="nav-link" href="#sabordasgerais-reservas" onclick="closeMenu()">Reservas</a>
+              <a class="nav-link" href="#sabordasgerais-contato" onclick="closeMenu()">Contato</a>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
         </button>
       </div>
 
-      <h1 class="display-4 mt-5 mx-5 mb-3">Nossa História</h1>
+      <h1 class="display-4 mt-5 mx-5 mb-3" id="sabordasgerais-historia">Nossa História</h1>
 
       <p class="mx-5 mb-3 fs-5">No coração histórico de Diamantina, Minas Gerais, encontra-se um tesouro culinário escondido: o restaurante "Sabor das Gerais". Desde a sua inauguração, em 1995, este pequeno restaurante tem encantado os moradores locais e os viajantes com a sua comida caseira, preparada com amor e cuidado. A história do Sabor das Gerais é tão rica quanto os sabores que ele oferece. Fundado pela família Silva, descendentes de antigos mineiros da região, o restaurante nasceu da paixão pela culinária tradicional de Minas Gerais. Com receitas transmitidas de geração em geração, o Sabor das Gerais preserva a autenticidade dos pratos que fizeram parte da história da região.</p>
         
@@ -73,7 +73,7 @@
         <p class="fs-5 mb-0">🏆 Prêmio Sustentabilidade: Reconhecimento pelo compromisso com práticas sustentáveis na gestão do restaurante.</p>
       </div>
 
-      <h2 class="display-4 mt-5 mb-2 mx-5">Avaliações dos nossos clientes</h2>
+      <h2 class="display-4 mt-5 mb-2 mx-5" id="sabordasgerais-avaliacoes">Avaliações dos nossos clientes</h2>
 
       <p class="mx-5 mb-4 fs-5">"Orgulhosamente premiado como o Melhor Restaurante da Cidade por três anos consecutivos! Venha descobrir por que somos os favoritos dos críticos e dos nossos clientes."</p>
 
@@ -117,7 +117,7 @@
 
       </div>
 
-      <h2 class="display-4 mt-5 mx-5 mb-4">Sugestões da casa</h2>
+      <h2 class="display-4 mt-5 mx-5 mb-4" id="sabordasgerais-sugestoes">Sugestões da casa</h2>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mx-5 mb-5">
           <div class="col">
@@ -160,24 +160,46 @@
       </div>
 
 
-      <div class="container-fluid px-0 mb-5">
-        <img src="/img/banner-reservas.jpg" class="img-fluid" alt="Banner sobre reservas" style="width: 100%;">
-      </div>
+      <div class="container-fluid px-0 position-relative" id="sabordasgerais-reservas">
+        <img src="/img/banner.jpg" class="img-fluid" alt="Banner sobre reservas" style="width: 100vw; object-fit: cover;">
+    </div>
 
 
+      <div class="container-fluid bg-dark text-white pt-5 pb-1 px-5">
 
-      <div class="card mx-5 bg-body-secondary border-0">
-        <div class="card-body">
-          <h4 class="card-title display-5">Não perca nossas promoções!</h4>
-          <p class="card-text d-inline-block mb-0 fs-5">Receba um aviso quando um de nossos pratos estiver com um desconto especial.</p>
-          <a href="#" class="btn btn-primary float-end mt-2 fs-5" style="background-color: #452907; border: none;">Cadastrar-se</a>
-          <div class="clearfix"></div>
-          <div class="mb-3">
-            <input type="tel" class="form-control w-50" id="inputPhone" placeholder="Insira seu número de telefone aqui" required>
-          </div>
+        <h2 class="display-4 mt-5 mb-4" id="sabordasgerais-contato">Contato</h2>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group mb-3">
+                    <li class="list-group-item bg-transparent text-white border-0">- Facebook: sabordasgerais</li>
+                    <li class="list-group-item bg-transparent text-white border-0 mb-4">- Instagram: @sabordasgerais</li>
+                    <li class="list-group-item bg-transparent text-white border-0">- contato@saboresdasgerais.com.br</li>
+                    <li class="list-group-item bg-transparent text-white border-0 mb-4">- reservas@saboresdasgerais.com</li>
+                    <li class="list-group-item bg-transparent text-white border-0">- (38) 98765-4321</li>
+                    <li class="list-group-item bg-transparent text-white border-0">- (38) 91234-5678</li>
+                </ul>
+            </div>
+    
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60629.03951610679!2d-43.64353069802894!3d-18.241377196291964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaeb9ab8f0c38ff%3A0x20f6a7aa673dbbe1!2sDiamantina%2C%20MG%2C%2039100-000!5e0!3m2!1spt-BR!2sbr!4v1715020521300!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-      </div>
+    
+        <p class="pt-5 text-center">Site criado por Waves © 2024 - Alguns direitos reservados</p>
+    
+    </div>
+    
       
+      <script>
+        function closeMenu() {
+          var navToggler = document.querySelector('.navbar-toggler');
+          var target = document.querySelector(navToggler.getAttribute('data-bs-target'));
+          if (target.classList.contains('show')) {
+            navToggler.click();
+          }
+        }
+      </script>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
